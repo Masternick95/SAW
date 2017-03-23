@@ -1,2 +1,6 @@
 cioaoaoaoaoao
+<<<<<<< HEAD
 come va?
+=======
+eiuufhwoohwhfo
+>>>>>>> origin/master
