@@ -13,30 +13,35 @@
 			var email = document.getElementById("email").value;
 			var password = document.getElementById("pwd").value;
 			
+			var msg = document.getElementById("msg");
+			
 			var error = false;
 			
-			//var emailPattern = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-			var pattern = /[a-z0-9.]{2,}[@][a-z.]{1,}[a-z]{2,}/;	//Pattern e-mail
+			var pattern = /[a-z0-9.]{2,}[@][a-z.]{1,}[.][a-z]{2,}/;	//Pattern e-mail
 			
 			//Controlli deprecati --> se ne occupa HTML5, necessari però lato server
 			if(pattern.test(email) == true){
 				//email valida
 			}else{
-				alert("Attenzione: _email non valida");
+				//alert("Attenzione: email non valida");
+				msg.innerHTML = "Attenzione: e-mail non valida";
+				document.getElementById("pwd").value = "";
 				error = true;
 			}
 			
 			if(password == ""){
-				alert("Attenzione campo password vuoto");
+				//alert("Attenzione campo password vuoto");
+				msg.innerHTML = "Attenzione: campo password vuoto";
 				error = true;
 			}
 			
 			if(error == true){
 				//C'è stato un errore
+				msg.setAttribute("style", "color: red");
 			}else{
 				//Tutto ok, posso inviare i dati
-				document.getElementById("msg").InnerHTML = "FORM VALIDO";
-				alert("FORM VALIDO");
+				msg.setAttribute("style", "color: green");
+				msg.innerHTML = "FORM VALIDO";
 			}
 			return false;
 		}
@@ -47,7 +52,7 @@
 		<form onsubmit="return validate()" id="form"><br>
 			<div class="form-group">
 			  <label for="email">Email:</label>
-			  <i class="glyphicon glyphicon-user"></i><input type="text" class="form-control" id="email" placeholder="Enter email" required>
+			  <i class="glyphicon glyphicon-user"></i><input type="email" class="form-control" id="email" placeholder="Enter email" required>
 			</div>
 			<div class="form-group">
 			  <label for="pwd">Password:</label>

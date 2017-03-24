@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Registrazione</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		
+	</head>
+	<body>
+		<div class="container">
+			<form onsubmit="return validate()">
+				<pre>
+					Nome: <input type="text" id="nome" required>
+					Cognome: <input type="text" id="cognome" required>
+					Data di nascita: <input type="date" id="data" required>
+					Luogo di nascita: <input type="text" id="luogo" required>
+					Indirizzo: <input type="text" id="indirizzo" required>
+					Cap: <input type="number" id="cap" required>
+					E-mail: <input type="email" id="email" required>
+					Telefono: <input type="tel" id="telefono">
+					Sesso: 	<input type="radio" name="sesso" value="maschio">Maschio <input type="radio" name="sesso" value="femmina">Femmina
+					Username: <input type="text" id="username" required>
+					Password: <input type="password" id="psw" required>
+					Conferma password: <input type="password" id="psw2" required>
+					<input type="submit" value="conferma">
+				</pre>
+			</form>
+		</div>
+	</body>
+</html>
