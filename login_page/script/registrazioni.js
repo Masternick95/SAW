@@ -15,7 +15,7 @@ function validate(){
 	var pattern_email = /[a-z0-9.]{2,}[@][a-z.]{1,}[.][a-z]{2,}/;	//Pattern e-mail
 	var pattern_data = /[0-3][0-9][/][0-1][0-9][/][1,2][0,9][0-9][0-9]/;	//Pattern data
 	
-	alert(data);
+	window.alert(data);
 	
 	if(nome == ""){
 		alert("Campo nome vuoto");
