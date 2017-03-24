@@ -21,7 +21,6 @@
 			//Controlli deprecati --> se ne occupa HTML5, necessari però lato server
 			if(pattern.test(email) == true){
 				//email valida
-				alert(email);
 			}else{
 				alert("Attenzione: _email non valida");
 				error = true;
@@ -36,29 +35,29 @@
 				//C'è stato un errore
 			}else{
 				//Tutto ok, posso inviare i dati
-				//document.getElementById("msg").setText("FORM VALIDO");
+				document.getElementById("msg").InnerHTML = "FORM VALIDO";
 				alert("FORM VALIDO");
 			}
-			false;
+			return false;
 		}
 	</script>
   </head>
   <body>
 	<div class="container">
-		<form onsubmit="validate()" id="form"><br>
+		<form onsubmit="return validate()" id="form"><br>
 			<div class="form-group">
 			  <label for="email">Email:</label>
-			  <i class="glyphicon glyphicon-user"></i><input type="text" class="form-control" id="email" placeholder="Enter email">
+			  <i class="glyphicon glyphicon-user"></i><input type="text" class="form-control" id="email" placeholder="Enter email" required>
 			</div>
 			<div class="form-group">
 			  <label for="pwd">Password:</label>
-			  <i class="glyphicon glyphicon-lock"></i><input type="password" class="form-control" id="pwd" placeholder="Enter password">
+			  <i class="glyphicon glyphicon-lock"></i><input type="password" class="form-control" id="pwd" placeholder="Enter password" required>
 			</div>
 			<div class="checkbox">
 			  <label><input type="checkbox"> Remember me</label>
 			</div>
 			<button type="submit" class="btn btn-default">Submit</button>
-			<span id="msg"></span>
+			<div id="msg"></div>
 	  </form>
 	</div>
   </body>
