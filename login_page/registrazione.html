@@ -11,7 +11,7 @@
 	</head>
 	<body>
 		<div class="container">
-			<form onsubmit="return validate()">
+			<form onsubmit="return validate()" id="form">
 				<div class="form-group">
 					<label for="nome">Nome:</label>
 					<input type="text" id="nome" class="form-control" placeholder="Enter name"  required>
@@ -22,11 +22,11 @@
 				</div>
 				<div class="form-group">
 					<label for="sesso">Sesso: </label>
-					<input type="radio" name="sesso" value="maschio">Maschio <input type="radio" name="sesso" value="femmina">Femmina
+					<input type="radio" name="sesso" id="sesso" value="maschio" selected>Maschio <input type="radio" name="sesso" id="sesso" value="femmina">Femmina
 				</div>				
 				<div class="form-group">
 					<label for="data">Data di nascita:</label>
-					<input type="date" id="nome" class="form-control" required>
+					<input type="date" id="data" class="form-control" required>
 				</div>
 				<div class="form-group">
 					<label for="luogo">Luogo di nascita:</label>

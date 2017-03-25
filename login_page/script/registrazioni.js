@@ -13,9 +13,10 @@ function validate(){
 	var psw2 = document.getElementById("psw2").value;
 	
 	var pattern_email = /[a-z0-9.]{2,}[@][a-z.]{1,}[.][a-z]{2,}/;	//Pattern e-mail
-	var pattern_data = /[0-3][0-9][/][0-1][0-9][/][1,2][0,9][0-9][0-9]/;	//Pattern data
+	//var pattern_data_old = /[0-3][0-9][/][0-1][0-9][/][1,2][0,9][0-9][0-9]/;	//Pattern data
+	var pattern_data = /[1,2][0,9][0-9][0-9][-][0-1][0-9][-][0-3][0-9]/;
 	
-	window.alert(data);
+	//alert(data);	//Formato data: anno-mese-giorno
 	
 	if(nome == ""){
 		alert("Campo nome vuoto");
@@ -81,6 +82,8 @@ function validate(){
 		alert("Le due password non coincidono");
 		return false;
 	}
+	
+	alert("FORM valido");
 	
 	return false;
 }
