@@ -4,67 +4,60 @@
 		<meta charset="utf-8" />
 		<title>Registrazione</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="login.css">
 		<script src="./script/registrazioni.js"></script>
 	</head>
 	<body>
 		<div class="container">
 			<form onsubmit="return validate()" id="form">
 				<div class="form-group">
-					<label for="nome">Nome:</label>
+					<label for="nome" class="form_group_label">Nome:</label>
 					<input type="text" id="nome" class="form-control" placeholder="Enter name"  required>
 				</div>
 				<div class="form-group">
-					<label for="cognome">Cognome:</label>
+					<label for="cognome" class="form_group_label">Cognome:</label>
 					<input type="text" id="cognome" class="form-control" placeholder="Enter surname"  required>
 				</div>
 				<div class="form-group">
-					<label for="sesso">Sesso: </label>
+					<label for="sesso" class="form_group_label">Sesso: </label>
 					<input type="radio" name="sesso" id="sesso" value="maschio" selected>Maschio <input type="radio" name="sesso" id="sesso" value="femmina">Femmina
 				</div>				
 				<div class="form-group">
-					<label for="data">Data di nascita:</label>
+					<label for="data" class="form_group_label">Data di nascita:</label>
 					<input type="date" id="data" class="form-control" required>
 				</div>
 				<div class="form-group">
-					<label for="luogo">Luogo di nascita:</label>
+					<label for="luogo" class="form_group_label">Luogo di nascita:</label>
 					<input type="text" id="luogo" class="form-control" placeholder="Enter place of birth"  required>
 				</div>
 				<div class="form-group">
-					<label for="indirizzo">Indirizzo:</label>
+					<label for="indirizzo" class="form_group_label">Indirizzo:</label>
 					<input type="text" id="indirizzo" class="form-control" placeholder="Enter address"  required>
-				</div>
-				<div class="form-group">
-					<label for="cap">Cap:</label>
+					<label for="cap" class="form_group_label">Cap:</label>
 					<input type="text" id="cap" class="form-control" placeholder="Enter cap"  required>
 				</div>
 				<div class="form-group">
-					<label for="email">E-mail:</label>
-					<i class="glyphicon glyphicon-envelope"></i>
+					<label for="email" class="form_group_label">E-mail:</label>
 					<input type="text" id="email" class="form-control" placeholder="Enter e-mail"  required>
 				</div>
 				<div class="form-group">
-					<label for="telefono">Telefono:</label>
-					<i class="glyphicon glyphicon-earphoneTelefono"></i>
+					<label for="telefono" class="form_group_label">Telefono:</label>
 					<input type="tel" id="telefono" class="form-control">
 				</div>
-				<div class="form-group">
-					<label for="email">Username:</label>
-					<i class="glyphicon glyphicon-user"></i>
+				<div class="form-group" class="form_group_label">
+					<label for="email" class="form_group_label">Username:</label>
 					<input type="text" id="username" class="form-control" placeholder="Enter username"  required>
 				</div>
 				<div class="form-group">
-					<label for="psw1">Password:</label>
-					<i class="glyphicon glyphicon-lock"></i>
+					<label for="psw1" class="form_group_label">Password:</label>
 					<input type="password" id="psw1" class="form-control" placeholder="Enter password" required>
 				</div>
 				<div class="form-group">
-					<label for="psw1">Ripeti password:</label>
+					<label for="psw1" class="form_group_label">Ripeti password:</label>
 					<input type="password" id="psw2" class="form-control" placeholder="Repete password" required>
 				</div>
-				<button type="submit" class="btn btn-default" value="conferma">Submit</button>
+				<button type="submit" class="button" value="conferma">Submit</button>
+				<div id="msg"></div>
 			</form>
 		</div>
 	</body>

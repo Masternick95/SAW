@@ -11,8 +11,8 @@ body {
 .container {
 	padding-right: 15px;
     padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: 98px;
+    margin-left: 98px;
 }
 
 .form-control {
@@ -35,7 +35,7 @@ body {
     font-weight: 700;
 }
 
-input[type=email], input[type=password]{
+input[type=email], input[type=password], input[type=text], input[type=tel], input[type=date]{
     width : 100%;
     padding: 10px;
     margin:0 auto;
@@ -66,4 +66,23 @@ input[type=email], input[type=password]{
     vertical-align: middle;
     border: 1px solid #ccc;
     border-radius: 4px;
+}
+
+
+#data {
+	width: 15%;
+}
+
+#cap {
+	width: 15%;
+	display: inline;
+	margin-left:15px;
+	margin-right:15px;
+}
+
+#indirizzo {
+	width: 50%;
+	display: inline;
+	margin-left:15px;
+	margin-right:15px;
 }
