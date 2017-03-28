@@ -12,8 +12,6 @@ function validate(){
 	var psw1 = document.getElementById("psw1").value;
 	var psw2 = document.getElementById("psw2").value;
 	
-	var pippo;
-	
 	var msg = document.getElementById("msg");
 	
 	var pattern_email = /[a-z0-9.]{2,}[@][a-z.]{1,}[.][a-z]{2,}/;	//Pattern e-mail
