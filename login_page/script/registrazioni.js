@@ -72,6 +72,7 @@ function validate(){
 	
 	if(psw1 != psw2){
 		alert("Campi password non coincidono");
+		document.getElementById("psw1").value = ""
 		document.getElementById("psw2").value = "";
 	}	
 	return false;
