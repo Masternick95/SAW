@@ -4,7 +4,7 @@ body{
 	background-size: 100%;
 	background-repeat: no-repeat;*/
 }
-div.container {
+.container {
 	text-align: center;
     width: 100%;
 }
@@ -19,7 +19,6 @@ footer {
 	font-weight: bold;
 }
 
-
 p {
     padding: 1em;
     overflow: hidden;
@@ -32,8 +31,6 @@ p {
 	background-repeat: no-repeat;
 }
 		
-
- 
 #menu{
 	float: center;
 	background-color:#606060;
@@ -61,10 +58,6 @@ p {
 #menu a:hover {
 	color: #000;
 	background: transparent;
-}
-
-#menu li.last {
-	border-right: none;
 }
 
 img {
