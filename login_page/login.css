@@ -12,8 +12,10 @@ body {
 .containerlog {
 	padding-right: 15px;
 	padding-left: 15px;
+	padding-top: 15px;
 	margin-right: 98px;
 	margin-left: 98px;
+	
 }
 
 .form-control {
