@@ -6,7 +6,7 @@
 	padding-right: 10px;
 	padding-left: 10px;
 	margin-right: 50px;
-	margin-left: 65%;
+	margin-left: 5px;
 	background-color: white;
 	height: auto;
 	width: auto;
@@ -19,6 +19,8 @@
 	
 	font-size: 16px;
 	font-weight: bold;
+	
+	float: left;
 }
 
 .form-control {
@@ -46,7 +48,7 @@ input[type=email], input[type=password]{
 	padding: 10px;
 	margin:0 auto;
 	display: inline-block;
-	border: 1px solid #ccc;
+	border: 1px solid black;
 	border-radius: 4px;
 	box-sizing: border-box;
 }
@@ -67,10 +69,7 @@ input[type=email], input[type=password]{
 	font-size: 14px;
    	font-weight: 400;
 	line-height: 1.5;
-	text-align: center;
-	white-space: nowrap;
-	vertical-align: middle;
-	border: 1px solid #ccc;
+	border: 1px solid black;
 	border-radius: 4px;
 }
 
