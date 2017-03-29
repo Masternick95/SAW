@@ -1,34 +1,53 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<title>Homepage</title>
-	<link rel="stylesheet" href="homepage.css">
-</head>
-<body>
-<div class="container">
-  <div class="social_icons">
-	   <a href="https://www.facebook.com/nicolo.fajette?fref=ts" target="_blank" class="social_a"><img src="./img/facebook_icon.png" /></a>
-	   <a href="https://twitter.com/andregrifone" target="_blank" class="social_a"><img src="./img/twitter_icon.png" /></a>
-	   <a href="https://www.instagram.com/borgioli.niccolo/" target="_blank" class="social_img"><img src="./img/instagram_icon.png" /></a>
-	   <a href="http://www.comune.genova.it" target="_blank"><img src="./img/comune.png" id="logo_comune"></a>
-    </div>
-  <nav>
-		<ul id="menu">
-			<li><a href="#">HOME</a></li>
-			<li><a href="#">PROFILO</a></li>
-			<li><a href="#">INFO</a></li>		
-			<li><a href="#">REGISTRAZIONE</a></li>
-			<li><a href="#">LOGIN</a></li>
-		</ul>
-	</nav>
-	<div id="content">
-
-	</div>
-
-	<footer>Copyright @NAN</footer>
-
-</div>
-
-</body>
+	<head>
+		<title>Homepage</title>
+		<link rel="stylesheet" href="homepage.css">
+		<link rel="stylesheet" href="login_embedded.css">
+		<script>
+			//document.getElementById("content").write();
+		</script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="social_icons">
+				<a href="https://www.facebook.com/nicolo.fajette?fref=ts" target="_blank" class="social_a"><img src="./img/facebook_icon.png" /></a>
+				<a href="https://twitter.com/andregrifone" target="_blank" class="social_a"><img src="./img/twitter_icon.png" /></a>
+				<a href="https://www.instagram.com/borgioli.niccolo/" target="_blank" class="social_img"><img src="./img/instagram_icon.png" /></a>
+				<a href="http://www.comune.genova.it" target="_blank"><img src="./img/comune.png" id="logo_comune"></a>
+			</div>
+			<nav>
+				<ul id="menu">
+					<li><a href="#">HOME</a></li>
+					<li><a href="#">PROFILO</a></li>
+					<li><a href="#">INFO</a></li>		
+					<li><a href="#">REGISTRAZIONE</a></li>
+					<!--<li><a href="#">LOGIN</a></li>-->
+				</ul>
+			</nav>
+			<div id="content">
+			<br>
+				<div class="form_container">
+					<form onsubmit="return validate()" id="form">
+						LOGIN<br><br>
+						<div class="form-group">
+						  <label for="email" class="form_group_label">Email:</label>
+						  <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+						</div>
+						<div class="form-group">
+						  <label for="pwd" class="form_group_label">Password:</label>
+						  <input type="password" class="form-control" id="pwd" placeholder="Enter password" required>
+						</div>
+						<div class="checkbox">
+						  <label class="checkbox_label"><input type="checkbox"> Remember me</label>
+						</div>
+						<button type="submit" class="button">Submit</button>
+						<div id="msg"></div>
+					</form>
+				</div>
+			</div>
+			<footer>Copyright @NAN</footer>
+		</div>
+	</body>
 </html>
 

@@ -3,26 +3,27 @@ body{
 	/*background-image: url("sfondo.jpg");
 	background-size: 100%;
 	background-repeat: no-repeat;*/
+	background-color: #f0b3b3;
 }
 div.container {
 	text-align: center;
-    width: 100%;
+	width: 100%;
 }
 
 footer {
-    padding: 1em;
-    color: #FF8000;
+	padding: 1em;
+	color: #FF8000;
 	font-family: Courier New;
-    background-color: #606060;
-    clear: left;
-    text-align: center;
+	background-color: #606060;
+	clear: left;
+	text-align: center;
 	font-weight: bold;
 }
 
 
 p {
-    padding: 1em;
-    overflow: hidden;
+	padding: 1em;
+	overflow: hidden;
 }
  
 #content{
@@ -30,6 +31,8 @@ p {
 	background-size: 100%;
 	height: 910px;
 	background-repeat: no-repeat;
+	margin: 0;
+	background-margin: 0;
 }
 		
 
@@ -40,6 +43,7 @@ p {
 	height: auto;
 	vertical-align: middle;
 	line-height: 50px;
+	display: block;
 }
 
 #menu li{
@@ -80,12 +84,12 @@ div.social_icons a img{
 
 #logo_comune {
 	width: auto;
-	height: 80;
+	height: 80px;
 	margin: 0 50px;
 	padding: 0;
 }	
 	
 div.social_icons {
 	text-align: right;
-    height: 80px;
+	height: 80px;
 }
