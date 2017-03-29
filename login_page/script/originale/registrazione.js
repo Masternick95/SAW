@@ -6,7 +6,6 @@ function validate(){
 	var indirizzo = document.getElementById("indirizzo").value;
 	var cap = document.getElementById("cap").value;
 	var email = document.getElementById("email").value;
-	var tel = document.getElementById("telefono").value;
 	var sesso = document.getElementById("sesso").value;
 	var username = document.getElementById("username").value;
 	var psw1 = document.getElementById("psw1").value;
@@ -52,6 +51,7 @@ function validate(){
 		alert("Attenzione: email non valida");
 		document.getElementById("psw1").value = "";
 		document.getElementById("psw2").value = "";
+		return false;
 	}
 	
 	if(sesso == ""){
@@ -74,6 +74,8 @@ function validate(){
 		alert("Campi password non coincidono");
 		document.getElementById("psw1").value = ""
 		document.getElementById("psw2").value = "";
+		return false;
 	}	
-	return false;
+	return true;
+	
 }
