@@ -23,6 +23,17 @@ p {
 	padding: 1em;
 	overflow: hidden;
 }
+
+.logo {
+	position: absolute;
+	left: 80px;
+	top: 12px;
+}
+
+#logo_img{
+	height: 150px;
+	width: 150px;
+}
  
 #content{
 	background-image: url("./img/sfondo.JPG");
