@@ -2,20 +2,20 @@ body {
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 	font-size: 14px;
 	line-height: 1.5;
-	color: #333;
+	color:  black;
 }
 
 .form-group {
 	margin-bottom: 15px;
+	width: 500px;
 }
 
 .containerlog {
 	padding-right: 15px;
 	padding-left: 15px;
 	padding-top: 15px;
-	margin-right: 98px;
-	margin-left: 98px;
-	
+	position: absolute;
+	left: 30.356%;
 }
 
 .form-control {
@@ -43,7 +43,7 @@ input[type=email], input[type=password], input[type=text], input[type=tel], inpu
 	padding: 10px;
 	margin:0 auto;
 	display: inline-block;
-	border: 1px solid #ccc;
+	border: 1px solid black;
 	border-radius: 4px;
 	box-sizing: border-box;
 }
@@ -56,31 +56,29 @@ input[type=email], input[type=password], input[type=text], input[type=tel], inpu
  }	 
 
 .button{
-	color: #333;
+	color: #000;
 	background-color: #fff;
 	display: inline-block;
 	padding: 6px 12px;
-	margin-bottom: 0;
+	margin: 0 215px;
 	font-size: 14px;
    	font-weight: 400;
 	line-height: 1.5;
-	text-align: center;
-	white-space: nowrap;
-	vertical-align: middle;
-	border: 1px solid #ccc;
+	border: 1px solid black;
 	border-radius: 4px;
 }
 
 
 #data {
-	width: 15%;
+	width: 35%;
+	padding-left: 10px;
+	margin-left: 12px;
 }
 
 #cap {
-	width: 15%;
+	width: 20%;
 	display: inline;
-	margin-left:15px;
-	margin-right:15px;
+	margin-left:12px;
 }
 
 #indirizzo {
