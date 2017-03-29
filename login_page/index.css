@@ -1,12 +1,12 @@
 body{
 	margin: 0;
-	/*background-image: url("sfondo.jpg");
-	background-size: 100%;
-	background-repeat: no-repeat;*/
 }
 .container {
-	text-align: center;
 	width: 100%;
+}
+
+.testata{
+	text-align: center;
 }
 
 footer {
@@ -14,7 +14,6 @@ footer {
 	color: #FF8000;
 	font-family: Courier New;
 	background-color: #606060;
-	clear: left;
 	text-align: center;
 	font-weight: bold;
 }
@@ -41,7 +40,6 @@ p {
 	height: 898px;
 	background-repeat: no-repeat;
 	margin: 0;
-	background-margin: 0;
 }
 		
 #menu{
@@ -52,6 +50,7 @@ p {
 	line-height: 50px;
 	display: block;
 	margin-bottom: 0;
+	margin-top: 16px;
 }
 
 #menu li{
@@ -112,8 +111,7 @@ div.social_icons {
 	padding-top: 10px;
 	padding-bottom: 15px;
 	text-align: center;
-	border-radius: 10px 10px 10px 10px;
-	
+	border-radius: 10px;
 	font-size: 16px;
 	font-weight: bold;
 	
