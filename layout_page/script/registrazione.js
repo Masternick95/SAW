@@ -1,1 +1,81 @@
-eval(function(p,a,c,k,e,d){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--){d[e(c)]=k[c]||e(c)}k=[function(e){return d[e]}];e=function(){return'\\w+'};c=1};while(c--){if(k[c]){p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c])}}return p}('P C(){7 k=4.5("k").6;7 j=4.5("j").6;7 m=4.5("m").6;7 n=4.5("n").6;7 l=4.5("l").6;7 i=4.5("i").6;7 h=4.5("h").6;7 q=4.5("q").6;7 p=4.5("p").6;7 f=4.5("f").6;7 g=4.5("g").6;7 u=4.5("u");7 v=/[a-E-9.]{2,}[@][a-z.]{1,}[.][a-z]{2,}/;7 D=/[1,2][0,9][0-9][0-9][-][0-1][0-9][-][0-3][0-9]/;8(k==""){b("d k c")}8(j=""){b("d j c")}8(m==""){b("d m c")}8(n==""){b("d n c")}8(l==""){b("d l c")}8(i==""){b("d i c")}8(h==""){b("d e-O c")}8(v.M(h)==s){b("I: h w K");4.5("f").6="";4.5("g").6="";r s}8(q==""){b("N F y o G A?")}8(p==""){b("d J c")}8(f==""){b("d t c")}8(g==""){b("d L t c")}8(f!=g){b("H t w x");4.5("f").6=""4.5("g").6="";r s}r B}',52,52,'||||document|getElementById|value|var|if|||alert|vuoto|Campo||psw1|psw2|email|cap|cognome|nome|indirizzo|data|luogo||username|sesso|return|false|password|msg|pattern_email|non|coincidono|maschietto||femminuccia|true|validate|pattern_data|z0|un|una|Campi|Attenzione|unsername|valida|conferma|test|Sei|mail|function'.split('|'),0,{}))
+function validate(){
+	var nome = document.getElementById("nome").value;
+	var cognome = document.getElementById("cognome").value;
+	var data = document.getElementById("data").value;
+	var luogo = document.getElementById("luogo").value;
+	var indirizzo = document.getElementById("indirizzo").value;
+	var cap = document.getElementById("cap").value;
+	var email = document.getElementById("email").value;
+	var sesso = document.getElementById("sesso").value;
+	var username = document.getElementById("username").value;
+	var psw1 = document.getElementById("psw1").value;
+	var psw2 = document.getElementById("psw2").value;
+	
+	var msg = document.getElementById("msg");
+	
+	var pattern_email = /[a-z0-9.]{2,}[@][a-z.]{1,}[.][a-z]{2,}/;	//Pattern e-mail
+	//var pattern_data_old = /[0-3][0-9][/][0-1][0-9][/][1,2][0,9][0-9][0-9]/;	//Pattern data
+	var pattern_data = /[1,2][0,9][0-9][0-9][-][0-1][0-9][-][0-3][0-9]/;
+	
+	//alert(data);	//Formato data: anno-mese-giorno
+	
+	if(nome == ""){
+		alert("Campo nome vuoto");
+	}
+	
+	if(cognome = ""){
+		alert("Campo cognome vuoto");
+	}
+	
+	if(data == ""){
+		alert("Campo data vuoto");
+	}
+	
+	if(luogo == ""){
+		alert("Campo luogo vuoto");
+	}
+	
+	if(indirizzo == ""){
+		alert("Campo indirizzo vuoto");
+	}
+	
+	if(cap == ""){
+		alert("Campo cap vuoto");
+	}
+	
+	if(email == ""){
+		alert("Campo e-mail vuoto");
+	}
+	
+	if(pattern_email.test(email) == false){
+		alert("Attenzione: email non valida");
+		document.getElementById("psw1").value = "";
+		document.getElementById("psw2").value = "";
+		return false;
+	}
+	
+	if(sesso == ""){
+		alert("Sei un maschietto o una femminuccia?");
+	}
+	
+	if(username == ""){
+		alert("Campo unsername vuoto");
+	}
+	
+	if(psw1 == ""){
+		alert("Campo password vuoto");
+	}
+	
+	if(psw2 == ""){
+		alert("Campo conferma password vuoto");
+	}
+	
+	if(psw1 != psw2){
+		alert("Campi password non coincidono");
+		document.getElementById("psw1").value = ""
+		document.getElementById("psw2").value = "";
+		return false;
+	}	
+	return true;
+	
+}
