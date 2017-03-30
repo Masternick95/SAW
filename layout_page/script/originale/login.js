@@ -30,8 +30,6 @@ function validate(){
 				return false;
 			}else{
 				//Tutto ok, posso inviare i dati
-				msg.setAttribute("style", "color: green");
-				msg.innerHTML = "FORM VALIDO";
 				return true;
 			}
 }

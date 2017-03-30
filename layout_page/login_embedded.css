@@ -3,24 +3,21 @@
 }
 
 .form_container {
-	padding-right: 10px;
-	padding-left: 10px;
-	margin-right: 50px;
-	margin-left: 5px;
-	background-color: white;
-	height: auto;
-	width: auto;
-	
-	margin-top: 30px;
-	padding-top: 10px;
-	padding-bottom: 15px;
-	text-align: center;
-	border-radius: 10px 10px 10px 10px;
-	
-	font-size: 16px;
-	font-weight: bold;
-	
-	float: left;
+    padding-right: 1vw;
+    padding-left: 1vw;
+    margin-right: 2vw;
+    margin-left: 1vw;
+    background-color: white;
+    height: auto;
+    width: 25vw;
+    margin-top: 3vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+    font-size: 16px;
+    font-weight: bold;
+    float: left;
 }
 
 .form-control {
