@@ -17,7 +17,7 @@ body{
 footer {
 	padding: 1em;
 	color: #FF8000;
-	font-family: Courier New;
+	font-family: "Courier New";
 	background-color: #606060;
 	text-align: center;
 	font-weight: bold;
@@ -52,7 +52,6 @@ p {
 }
 		
 #menu{
-	float: center;
 	background-color:#606060;
 	height: auto;
 	vertical-align: middle;
@@ -63,7 +62,7 @@ p {
 
 #menu li{
 	font-size: 2vw;
-	font-family: Courier New;
+	font-family: "Courier New";
 	padding-right: 1em;
 	display: inline;
 }
