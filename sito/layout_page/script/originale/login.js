@@ -26,7 +26,6 @@ function validate(){
 			
 			if(error == true){
 				//C'è stato un errore
-				//msg.setAttribute("style", "color: red");
 				return false;
 			}else{
 				//Tutto ok, posso inviare i dati

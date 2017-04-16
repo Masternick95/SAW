@@ -126,3 +126,21 @@ div.social_icons {
 #testo cite{
 	color: #695f5f;
 }
+
+#footer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+#logout {
+	float: right;
+}
+
+#logout a:link, #logout a:hover, #logout a:visited {
+	color: #000;
+}
+
+
+
