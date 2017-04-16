@@ -120,7 +120,7 @@ div.social_icons {
     border-radius: 10px;
     font-size: 16px;
     font-weight: bold;
-    float: left;
+	float: left;
 }
 
 #testo cite{
@@ -142,5 +142,9 @@ div.social_icons {
 	color: #000;
 }
 
+#map {	
+    height: 50%;
+    width: 100%
+}
 
 

@@ -11,12 +11,6 @@
 		<script src="./script/originale/login.js"></script>
 		<script src="./script/originale/cambio_pagine.js"></script>
 	</head>
-	<style>
-		#map {
-			height: 50%;
-			width: 100%;
-		}
-	</style>
 	<script>
 		function initMap() {
 			// Create a map object and specify the DOM element for display.
@@ -55,37 +49,37 @@
 					</ul>
 				</nav>
 			</div>
-			<div id="content"><br>
+			<div id="content"><br>				
+				<div id="testo" <?php if (isset($_SESSION["username"])) { echo 'style="margin-left:20vw"';}?>>
+					<p id="pagina_testo">
+						&ldquo;&Egrave; una citt&agrave; di carta. Guardala: guarda tutti quei viottoli, quelle strade che girano su se stesse, quelle case che sono state costruite per cadere a pezzi. Tutte quelle persone di carta che vivono nelle loro case di carta, che si bruciano il futuro pur di scaldarsi. Tutti quei ragazzini di carta che bevono birra che qualche cretino ha comprato loro in qualche discount di carta. Cose sottili e fragili come carta. E tutti altrettanto sottili e fragili. Ho vissuto qui per diciotto anni e non ho mai incontrato qualcuno che si preoccupasse delle cose che contano davvero.&rdquo;<br>
+					<cite>Citt&agrave; di Carta</cite>
+					</p>
+					<form id="change_text">
+						<input type="radio" name="page" value="1" onclick="pages(1)" checked><input type="radio" name="page" onclick="pages(2)" value="2"><input type="radio" name="page" onclick="pages(3)" value="3">
+					</form>
+				</div>	
 				<?php
 					if (!isset($_SESSION["username"])) {
-						echo
-							'<div id="testo">
-								<p id="pagina_testo">
-									&ldquo;&Egrave; una citt&agrave; di carta. Guardala: guarda tutti quei viottoli, quelle strade che girano su se stesse, quelle case che sono state costruite per cadere a pezzi. Tutte quelle persone di carta che vivono nelle loro case di carta, che si bruciano il futuro pur di scaldarsi. Tutti quei ragazzini di carta che bevono birra che qualche cretino ha comprato loro in qualche discount di carta. Cose sottili e fragili come carta. E tutti altrettanto sottili e fragili. Ho vissuto qui per diciotto anni e non ho mai incontrato qualcuno che si preoccupasse delle cose che contano davvero.&rdquo;<br>
-								<cite>Citt&agrave; di Carta</cite>
-								</p>
-								<form id="change_text">
-									<input type="radio" name="page" value="1" onclick="pages(1)" checked><input type="radio" name="page" onclick="pages(2)" value="2"><input type="radio" name="page" onclick="pages(3)" value="3">
-								</form>
-							</div>					
-							<div class="form_container">
-								<form onsubmit="return validate()" id="form" method="POST" action="login.php">
-									LOGIN<br><br>
-									<div class="form-group">
-										<label for="email" class="form_group_label">Email:</label>
-										<input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required>
-									</div>
-									<div class="form-group">
-										<label for="pwd" class="form_group_label">Password:</label>
-										<input type="password" class="form-control" id="pwd" name="pwd" placeholder="Enter password" required>
-									</div>
-									<div class="checkbox">
-										<label class="checkbox_label"><input type="checkbox" name="remember"> Remember me</label>
-									</div>
-									<button type="submit" class="button">Submit</button><br><br>
-									<div id="msg"></div>
-								</form>
-							</div>';
+					echo
+						'<div class="form_container">
+							<form onsubmit="return validate()" id="form" method="POST" action="login.php">
+								LOGIN<br><br>
+								<div class="form-group">
+									<label for="email" class="form_group_label">Email:</label>
+									<input type="email" class="form-control" id="email" name="email" placeholder="Enter email" required>
+								</div>
+								<div class="form-group">
+									<label for="pwd" class="form_group_label">Password:</label>
+									<input type="password" class="form-control" id="pwd" name="pwd" placeholder="Enter password" required>
+								</div>
+								<div class="checkbox">
+									<label class="checkbox_label"><input type="checkbox" name="remember"> Remember me</label>
+								</div>
+								<button type="submit" class="button">Submit</button><br><br>
+								<div id="msg"></div>
+							</form>
+						</div>';
 					} else {
 						echo '<div id="map"></div>';
 					}
