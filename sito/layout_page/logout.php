@@ -3,5 +3,6 @@
 	$_SESSION = array(); 
 	session_destroy(); 
 	header("location: index.php");
-	//exit(); 
+	//exit();
+	setcookie('autologin', null, time()-60*60*7);
 ?>
