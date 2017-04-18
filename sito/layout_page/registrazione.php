@@ -109,7 +109,7 @@
 	$file = fopen("./../private/users.txt", "a");
 	if ($file == false) {
 		//errore
-		header('Location: index.phpl?error=5');
+		header('Location: index.php?error=5');
 	} else {
 		$line = $email.",".md5($psw1).",".$username.",".$nome.",".$cognome.",".$sesso.",".date("d-m-Y", strtotime($data)).",".$indirizzo.",".$cap.",".$luogo.PHP_EOL;
 		fwrite($file, $line);

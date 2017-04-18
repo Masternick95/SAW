@@ -1,5 +1,30 @@
 <?php 
 	session_start();
+	//Controllo esistenza cookie autologin
+	if(isset($_COOKIE['autologin']) && !isset($_SESSION['username'])){	//Eseguo controllo solo se la sessione è scaduta e se l'autologin è attivo
+		//Login automatico con la mail: $_COOKIE['autologin']
+		$file = fopen("./../private/users.txt", "r");
+		if($file == false){
+			//Errore apertura file
+		}else{
+			while(($line = fgets($file)) != false){
+				$value = explode(",", $line);
+				if($_COOKIE['autologin'] == $value[0]){
+					//Utente cookie valido
+					//Setto le variabili di sessione di questo utente
+					$_SESSION['email'] = $value[0];
+					$_SESSION["username"] = $value[2];
+					$_SESSION["nome"] = $value[3];
+					$_SESSION["cognome"] = $value[4];
+					$_SESSION["data"] = $value[6];
+					$_SESSION["indirizzo"] = $value[7];
+					$_SESSION["cap"] = $value[8];
+					//Modifico scadenza cookie
+					setcookie('autologin', $value[0], time()+60*60*7);
+				}
+			}
+		}
+	}
 ?>
 <!DOCTYPE html>
 <html>
@@ -43,7 +68,7 @@
 							if (!isset($_SESSION["username"])) {
 								echo '<li><a href="registrazione.html">REGISTRAZIONE</a></li>';
 							}else{
-								echo '<li id="logout"><button ><a href="logout.php">LOGOUT</a></button></li>';
+								echo '<li id="logout"><a href="logout.php">LOGOUT</a></li>';
 							}
 						?>
 					</ul>

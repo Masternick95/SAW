@@ -29,7 +29,7 @@
 							if (!isset($_SESSION["username"])) {
 								echo '<li><a href="registrazione.html">REGISTRAZIONE</a></li>';
 							}else{
-								echo '<li id="logout" ><button><a href="logout.php">LOGOUT</a></button></li>';
+								echo '<li id="logout" ><a href="logout.php">LOGOUT</a></li>';
 							}
 						?>
 					</ul>

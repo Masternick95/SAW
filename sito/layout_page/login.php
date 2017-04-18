@@ -13,10 +13,6 @@
 		//campo pwd vuoto
 		header('Location: index.php?error=2');
 	}
-	
-	if ($_POST['remember'] == 1) {
-		setcookie('autologin', $_email, time()+60*60*7);
-	}
 		
 	
 	//verifica esistenza utente
@@ -39,14 +35,21 @@
 				$_SESSION["cognome"] = $value[4];
 				$_SESSION["data"] = $value[6];
 				$_SESSION["indirizzo"] = $value[7];
-				$_SESSION["cap"] = $value[8];				
+				$_SESSION["cap"] = $value[8];
+				//Se è attivo l'autologin creo un cookie per gestirlo
+				if ($_POST['remember'] == true) {
+					setcookie('autologin', $value[0], time()+60*60*7);
+					//echo "Cookie settato"; //--DEBUG ONLY
+				}	
 				header('Location: profilo.php?login');
 				
 			}
 			else {
-				header('Location: index.php?NotMatched');
+				//header('Location: index.php?NotMatched');
 			}
-		}		
+		}
+		//Nessuna corrispondenza trovata
+		fclose($file);
+		header('Location: index.php?NotMatched');		
 	}
-	fclose($file);
 ?>
