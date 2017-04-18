@@ -1,0 +1,150 @@
+body{
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	position: relative
+}
+.container {
+	width: 100%;
+}
+
+.testata{
+	text-align: center;
+	width: 100%;
+	height: auto;
+}
+
+footer {
+	padding: 1em;
+	color: #FF8000;
+	font-family: "Courier New";
+	background-color: #606060;
+	text-align: center;
+	font-weight: bold;
+}
+
+p {
+	padding: 1em;
+	overflow: hidden;
+}
+
+.logo {
+	position: absolute;
+	z-index:20;
+	height: 0;
+	left: 5vw;
+	top: 5vh;
+}
+
+#logo_img{
+	height: 15vh;
+	width: auto;
+}
+ 
+#content{
+	background-image: url("./img/sfondo.JPG");
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	width: 100%;
+    height: 100vh;
+}
+		
+#menu{
+	background-color:#606060;
+	height: auto;
+	vertical-align: middle;
+	line-height: 3em;
+	display: block;
+	margin: 0;
+}
+
+#menu li{
+	font-size: 2vw;
+	font-family: "Courier New";
+	padding-right: 1em;
+	display: inline;
+}
+
+#menu a:link,#menu a:visited {
+	margin: 0;
+	padding: 0;
+	color: #FF8000;
+	background: transparent;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#menu a:hover {
+	color: #000;
+	background: transparent;
+}
+
+img {
+	vertical-align: middle;
+	display: inline-block;
+	background-size: cover;
+}
+
+div.social_icons a img{
+	width: auto ;
+	height: 5vh;
+	padding: 2.5vh 0;
+}
+
+#logo_comune {
+	width: auto;
+	height: 10vh;
+	margin: 0 5vw;
+	padding: 0;
+}	
+	
+div.social_icons {
+	text-align: right;
+	height: auto;
+}
+
+#testo {
+    background-color: white;
+    padding-left: 1vh;
+    padding-right: 1vh;
+    margin-left: 3vw;
+    margin-right: 2vw;
+    height: auto;
+    width: 60vw;
+    margin-top: 3vh;
+    padding-top: 1vh;
+    padding-bottom: 3vh;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+	float: left;
+}
+
+#testo cite{
+	color: #695f5f;
+}
+
+#footer {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
+#logout {
+	float: right;
+}
+
+#logout a:link, #logout a:hover, #logout a:visited {
+	color: #000;
+}
+
+#map {	
+    height: 50%;
+    width: 100%
+}
+
+
