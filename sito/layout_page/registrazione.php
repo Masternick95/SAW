@@ -7,7 +7,6 @@
 	}
 	
 	if (isset($_POST['psw1']) && !empty($_POST['psw1'])) {
-		//$psw1 = addcslashes(trim($_POST['psw1']));
 		$psw1 = trim($_POST['psw1']);
 	} else {
 		//campo psw1 vuoto
@@ -99,6 +98,7 @@
 				//interrompi flusso
 				fclose($file);
 				header('Location: registrazione.html?error=4');
+				return;
 			} 			
 		}	
 	}

@@ -44,6 +44,13 @@
 			scrollwheel: false,
 			zoom: 8
 			});
+			var marker = new google.maps.Marker({
+			position: {lat: 44.402016, lng: 8.969922},
+			title:"University"
+			});
+
+			// To add the marker to the map, call setMap();
+			marker.setMap(map);
 		}
 	</script>
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0W3mlTakNctxFJL2RRks8FRIbvFsoENY&callback=initMap"async defer></script>
