@@ -2,3 +2,4 @@
 massimilano.fajette@gmail.com,2ffe4e77325d9a7152f7086ea7aa5114,massimiliano,Massimiliano,Fajette,maschio,31-07-1965,via cadighiara 43\15B,16133,Genova
 nik.fajette.95@hotmail.it,6384e2b2184bcbf58eccf10ca7a6563c,pippo,Nicolò,Fajette,maschio,02-10-1995,via cadighiara 43\15B,16133,Genova
 borgioli.niccolo@gmail.com,1a1dc91c907325c69271ddf0c944bc72,masternick,Niccolò,Borgioli,maschio,01-01-1970,via della Posta 10,54100,Pietrasanta
+andregrifone1@hotmail.it,7b37bd3481e28e12640e5b729dd27665,andregrifone,Andrea,Costa,maschio,10-12-1995,Viale Villa Glori,16128,Zena

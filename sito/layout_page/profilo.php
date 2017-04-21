@@ -39,7 +39,16 @@
 				<?php 
 					if (isset($_SESSION["username"])) {
 						echo '<h1 style="text-align: center">Benvenuto nella pagina profilo</h1>';
-						
+						echo '<h2 style="text-align: left">I miei dati:</h2>';
+						echo 
+							'<p id="dati_utente" style="text-align: left">
+								Nome: '.$_SESSION["nome"].'<br>
+								Cognome: '.$_SESSION["cognome"].'<br>
+								Data di nascita: '.$_SESSION["data"].'<br>
+								Indirizzo: '.$_SESSION["indirizzo"].'<br>
+								Cap: '.$_SESSION["cap"].'<br>
+								Username: '.$_SESSION["username"].'<br>
+								Email: '.$_SESSION["email"].'</p>';
 					} else {
 						echo '<h1 style="text-align: center">Registrati o loggati</h1>';
 					}
